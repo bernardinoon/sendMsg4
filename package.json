@@ -40,7 +40,7 @@
       "prepare": "tsc",
       "release": "release-it",
       "test": "jest",
-      "start": "node ___server.js"
+     
     },
     "dependencies": {
       "@adiwajshing/keyed-db": "^0.2.4",
