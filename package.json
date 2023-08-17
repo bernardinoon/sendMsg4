@@ -39,7 +39,7 @@
       "prepack": "tsc",
       "prepare": "tsc",
       "release": "release-it",
-      "test": "jest",
+      "test": "jest"
      
     },
     "dependencies": {
