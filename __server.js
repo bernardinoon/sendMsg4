@@ -3,7 +3,7 @@ const express = require('express');
 //const cors = require('cors');
 const app = express();
 const path = require('path');
-const port = 80;
+const port = 3002;
 
 
 // Configura o servidor para lidar com requisições POST
