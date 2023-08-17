@@ -1,9 +1,9 @@
 //Este arquivo é para função de enviar mensagem a partir do index.html ouvindo na porta
 const express = require('express');
-const cors = require('cors');
+//const cors = require('cors');
 const app = express();
 const path = require('path');
-const port = 3002;
+const port = 80;
 
 
 // Configura o servidor para lidar com requisições POST
