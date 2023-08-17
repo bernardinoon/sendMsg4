@@ -1,6 +1,6 @@
 //Este arquivo é para função de enviar mensagem a partir do index.html ouvindo na porta
 const express = require('express');
-//const cors = require('cors');
+const cors = require('cors');
 const app = express();
 const path = require('path');
 const port = 3000;
@@ -16,7 +16,7 @@ app.use(cors({
 
 */
 app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000'); // Origem do cliente (http://localhost:3002)
+  res.setHeader('Access-Control-Allow-Origin', 'https://jade-fuzzy-giraffe.cyclic.app:3000'); // Origem do cliente (http://localhost:3002)
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');  
   res.setHeader('Access-Control-Allow-Credentials', 'true');
