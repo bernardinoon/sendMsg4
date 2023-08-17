@@ -2,7 +2,7 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const port = 3001;
+const port = 3002;
 
 
 // Configura o servidor para lidar com requisições POST
