@@ -3,7 +3,7 @@ const express = require('express');
 //const cors = require('cors');
 const app = express();
 const path = require('path');
-const port = 80;
+const port = 3000;
 
 
 // Configura o servidor para lidar com requisições POST
@@ -16,7 +16,7 @@ app.use(cors({
 
 */
 app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:80'); // Origem do cliente (http://localhost:3002)
+  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000'); // Origem do cliente (http://localhost:3002)
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');  
   res.setHeader('Access-Control-Allow-Credentials', 'true');
