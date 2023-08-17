@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cors({
   origin: 'https://send-msg3.vercel.app/'
 }));
-*/
+
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', 'https://jade-fuzzy-giraffe.cyclic.app'); // Altere o domínio para o correto
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST');
@@ -23,7 +23,7 @@ app.use((req, res, next) => {
   next();
 });
 
-
+*/
 
 // Rota para receber o formulário
 app.post('/enviar', (req, res) => {
