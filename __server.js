@@ -1,6 +1,6 @@
 //Este arquivo é para função de enviar mensagem a partir do index.html ouvindo na porta
 const express = require('express');
-//const cors = require('cors');
+const cors = require('cors');
 const app = express();
 const path = require('path');
 const port = 3002;
@@ -13,9 +13,10 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cors({
   origin: 'https://send-msg3.vercel.app/'
 }));
+
 */
 app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3002'); // Origem do cliente (http://localhost:3002)
+  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:80'); // Origem do cliente (http://localhost:3002)
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');  
   res.setHeader('Access-Control-Allow-Credentials', 'true');
@@ -24,11 +25,12 @@ app.use((req, res, next) => {
 });
 
 
+
+
 app.use((err, req, res, next) => {
   console.error(err.stack);
   res.status(500).send('Algo deu errado!');
 });
-
 
 
 // Rota para receber o formulário
